@@ -1,0 +1,6 @@
+Launch on 8501: exit 1, Port 8501 is not available.
+Launch on 8502: Uvicorn server started; Local URL: http://localhost:8502
+GET http://localhost:8501/: HTTP 200; bytes=7863; health=HTML returned
+GET http://localhost:8501/_stcore/health: HTTP 200; bytes=2; health=ok
+GET http://localhost:8502/: HTTP 200; bytes=7863; health=HTML returned
+GET http://localhost:8502/_stcore/health: HTTP 200; bytes=2; health=ok

@@ -1,0 +1,30 @@
+COMMAND: D:\s\sampling-visual-lab\.venv\Scripts\python.exe -m compileall app.py src tests scripts
+EXIT: 0
+Listing 'src'...
+Listing 'src\\sampling_lab'...
+Listing 'src\\sampling_visual_lab.egg-info'...
+Listing 'tests'...
+Compiling 'tests\\test_app.py'...
+Listing 'scripts'...
+
+COMMAND: D:\s\sampling-visual-lab\.venv\Scripts\python.exe -m pytest -q
+EXIT: 0
+............................................................             [100%]
+60 passed in 13.03s
+
+COMMAND: D:\s\sampling-visual-lab\.venv\Scripts\python.exe -m pytest -q tests/test_signals.py tests/test_sampling.py tests/test_reconstruction.py tests/test_metrics_alias.py tests/test_presets.py tests/test_exports.py tests/test_spectrum.py
+EXIT: 0
+.........................................................                [100%]
+57 passed in 2.23s
+
+COMMAND: D:\s\sampling-visual-lab\.venv\Scripts\python.exe -m ruff check .
+EXIT: 0
+All checks passed!
+
+COMMAND: D:\s\sampling-visual-lab\.venv\Scripts\python.exe -m ruff format --check .
+EXIT: 0
+25 files already formatted
+
+COMMAND: D:\s\sampling-visual-lab\.venv\Scripts\python.exe -c "import app"
+EXIT: 0
+

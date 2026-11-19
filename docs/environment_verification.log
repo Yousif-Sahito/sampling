@@ -1,0 +1,32 @@
+COMMAND: D:\s\sampling-visual-lab\.venv\Scripts\python.exe -m pip install --upgrade pip
+EXIT: 0
+Requirement already satisfied: pip in .\.venv\Lib\site-packages (26.3)
+
+COMMAND: D:\s\sampling-visual-lab\.venv\Scripts\python.exe -m pip install -r requirements.txt
+EXIT: 1
+Obtaining file:///D:/s/sampling-visual-lab (from -r requirements.txt (line 7))
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  installing build dependencies did not run successfully.
+  exit code: 1
+  
+  [2 lines of output]
+  ERROR: Could not find a version that satisfies the requirement setuptools>=68 (from versions: none)
+  ERROR: No matching distribution found for setuptools>=68
+  [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+ERROR: Failed to build 'file:///D:/s/sampling-visual-lab' when installing build dependencies
+
+COMMAND: D:\s\sampling-visual-lab\.venv\Scripts\python.exe -m pip show streamlit plotly
+EXIT: 1
+WARNING: Package(s) not found: plotly, streamlit
+
+COMMAND: D:\s\sampling-visual-lab\.venv\Scripts\python.exe -m streamlit run app.py --server.headless true --server.port 8501
+EXIT: 1
+D:\s\sampling-visual-lab\.venv\Scripts\python.exe: No module named streamlit
+
+GET https://pypi.org/simple/streamlit/: URLError: <urlopen error [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions>
+GET http://localhost:8501: URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
